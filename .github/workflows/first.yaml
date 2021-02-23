@@ -1,0 +1,39 @@
+name: first
+
+# Frst YAML Project trying to use GitHub Workflows
+
+on: push
+
+jobs:
+    job1:
+
+        name: First Job
+
+        runs-on: ubuntu-latest
+
+        steps:
+
+        - name: Step One
+
+          uses: actions/checkout@v2
+
+        - name: Step Two
+          
+          run: env | sort
+
+    job2:
+
+        name: Second Job
+
+        runs-on: windows-latest
+
+        steps:
+
+        - name: Step One
+
+          uses: actions/checkout@v2
+
+        - name: Step Two
+
+          run: "GetChildItem Env: | Sort-Object Name"
+
