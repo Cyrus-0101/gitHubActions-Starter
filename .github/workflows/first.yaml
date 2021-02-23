@@ -35,5 +35,5 @@ jobs:
 
         - name: Step Two
 
-          run: "GetChildItem Env: | Sort-Object Name"
+          run: "Get-ChildItem Env: | Sort-Object Name"
 
